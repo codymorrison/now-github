@@ -1,33 +1,49 @@
 {
-  "name": "micro-github",
+  "name": "now-github",
   "version": "1.0.0",
-  "description": "",
+  "description": "Github Authentication using Now.sh",
   "main": "index.js",
-  "scripts": {
-    "start": "micro",
-    "dev": "nodemon --exec \"npm start\" -e \"js\"",
-    "test": "standard"
-  },
+  "files": [
+    "lib"
+  ],
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mxstbr/micro-github.git"
+    "url": "git+https://github.com/codymorrison/now-github.git"
   },
-  "author": "Max Stoiber <contact@mxstbr.com> (http://mxstbr.com/)",
+  "author": "Cody Morrison <cody@pixel43.com> (https://github.com/codymorrison)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mxstbr/micro-github/issues"
+    "url": "https://github.com/codymorrison/now-github/issues"
   },
-  "homepage": "https://github.com/mxstbr/micro-github.git#readme",
+  "homepage": "https://github.com/codymorrison/now-github.git#readme",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=6.0.0"
+  },
   "dependencies": {
-    "axios": "^0.15.3",
-    "dotenv": "^4.0.0",
-    "micro": "^6.2.1",
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
+    "micro": "^9.3.3",
     "micro-redirect": "^1.0.0",
-    "microrouter": "^2.0.1",
-    "uid-promise": "^0.1.0"
+    "microrouter": "^3.1.3",
+    "uid-promise": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "standard": "^8.6.0"
+    "chai": "^4.2.0",
+    "eslint": "^5.12.1",
+    "eslint-plugin-mocha": "^5.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "micro-dev": "^3.0.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.16.0",
+    "supertest": "^3.4.1"
+  },
+  "scripts": {
+    "start": "micro",
+    "dev": "micro-dev",
+    "lint": "eslint index.js",
+    "test": "mocha"
   }
 }
