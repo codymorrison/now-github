@@ -1,0 +1,9 @@
+{
+  "undefined-client-id": "The GH_CLIENT_ID environment variable was not found. Please supply this value and try again.",
+  "undefined-client-secret": "The GH_CLIENT_SECRET environment variable was not found. Please supply this value and try again.",
+  "mismatched-state": "The state provided by Github does not match our records. Please try again.",
+  "undefined-code": "The code provided by Github was not found. This may be an error with Github or the application's credentials. Please contact the administrator and try again.",
+  "undefined-state": "The state provided by Github was not found. This may be an error with Github or the application's credentials. Please contact the administrator and try again.",
+  "request_auth_token_failure": "Please double check your environment variables. Github could also be down.",
+  "unknown-error": "An unknown error occured. Please try again."
+}
