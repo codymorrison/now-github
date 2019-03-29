@@ -24,6 +24,7 @@ const app = new GithubAuth(githubClientId, githubClientSecret, {
 
 // Export routes
 module.exports = router(
+  get("/", app.login),
   get("/login", app.login),
   get("/callback", app.callback)
 );
