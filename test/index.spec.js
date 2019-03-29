@@ -6,7 +6,7 @@ const url = require("url");
 const app = require("../index");
 const request = require("supertest");
 
-const errorMessages = require("../lib/errors.json");
+const errorMessages = require("../lib/static/errors.json");
 
 describe("API", function() {
   describe("/login", (done) => {

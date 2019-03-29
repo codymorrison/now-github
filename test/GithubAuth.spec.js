@@ -1,7 +1,7 @@
 const expect = require("chai").expect;
 
 const GithubAuth = require("../lib/GithubAuth");
-const errorMessages = require("../lib/errors.json");
+const errorMessages = require("../lib/static/errors.json");
 
 describe("GithubAuth", function() {
   before(() => {
