@@ -2,7 +2,7 @@
 // Project: Now-Github
 // Definitions by: Cody Morrison <[~A URL FOR YOU~]>
 
-export = GithubAuth;
+export default GithubAuth;
 
 export interface GithubAuthOptions {
   githubUrl?: string;
